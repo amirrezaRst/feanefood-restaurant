@@ -1,4 +1,7 @@
 backend2/
 frontend2/
 
-backend/node_modules
+frontend/node_modules/
+backend/node_modules/
+frontend/public/bootstrap-4.6.1-dist
+frontend/public/fontawesome-pro-6.1.1-web
