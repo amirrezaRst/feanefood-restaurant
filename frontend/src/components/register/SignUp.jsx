@@ -1,9 +1,10 @@
 import React, { useContext, useRef, useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import axios from "axios"
-import UserContext from '../../services/UserContext';
 import { toast } from "react-toastify";
+import {Helmet} from "react-helmet";
 
+import UserContext from '../../services/UserContext';
 import burger1 from "../../images/burger-image-1.png";
 
 const SignIn = ({ history }) => {
@@ -103,7 +104,9 @@ const SignIn = ({ history }) => {
                 </div>
             </header>
 
-
+            <Helmet>
+                <title>Feane - Signup</title>
+            </Helmet>
 
             <section class="book_section py-4">
                 <div class="container">

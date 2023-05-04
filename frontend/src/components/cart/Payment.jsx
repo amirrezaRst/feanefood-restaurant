@@ -1,6 +1,7 @@
 import React, { useContext, useRef, useState } from 'react';
 import { Link, NavLink, useLocation } from "react-router-dom";
 import axios from "axios";
+import {Helmet} from "react-helmet";
 
 import AuthorizationContext from '../../services/AuthorizationContext';
 import SinglePaymentFood from './SinglePaymentFood';
@@ -39,6 +40,11 @@ const Payment = () => {
 
             <header class="header_section" style={{ background: "#14181b" }}>
                 <div class="container">
+
+                    <Helmet>
+                        <title>Feane - Payment</title>
+                    </Helmet>
+
                     <nav class="navbar navbar-expand-lg custom_nav-container ">
                         <Link to="/" class="navbar-brand">
                             <span>

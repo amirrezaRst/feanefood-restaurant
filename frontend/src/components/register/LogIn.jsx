@@ -1,10 +1,11 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import UserContext from '../../services/UserContext';
-
-import burger1 from "../../images/burger-image-1.png";
+import {Helmet} from "react-helmet";
 import { toast } from 'react-toastify';
+
+import UserContext from '../../services/UserContext';
+import burger1 from "../../images/burger-image-1.png";
 import AuthorizationContext from '../../services/AuthorizationContext';
 
 
@@ -128,7 +129,9 @@ const LogIn = () => {
                 </div>
             </header>
 
-
+            <Helmet>
+                <title>Feane - Login</title>
+            </Helmet>
 
             <section class="book_section py-4">
                 <div class="container">

@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import axios from "axios";
-
 import { Link, NavLink } from 'react-router-dom';
+import { Helmet } from "react-helmet";
+
 import AuthorizationContext from '../../services/AuthorizationContext';
 
 
@@ -49,6 +50,11 @@ const VerifyPaymentPage = () => {
 
             <header class="header_section" style={{ background: "#14181b" }}>
                 <div class="container">
+
+                    <Helmet>
+                        <title>Verify Payment</title>
+                    </Helmet>
+
                     <nav class="navbar navbar-expand-lg custom_nav-container ">
                         <Link to="/" class="navbar-brand">
                             <span>

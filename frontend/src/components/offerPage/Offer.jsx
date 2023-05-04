@@ -1,6 +1,7 @@
 import React from 'react';
-
 import { NavLink, Link } from "react-router-dom";
+import {Helmet} from "react-helmet";
+
 import OfferHeader from './OfferHeader';
 
 
@@ -8,7 +9,12 @@ const Offer = () => {
     return (
         <React.Fragment>
 
+            <Helmet>
+                <title>Feane - Daily Offer</title>
+            </Helmet>
+
             <OfferHeader />
+
 
             {/* <main className='py-5'>
 

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { Helmet } from "react-helmet";
 
 import AuthorizationContext from '../services/AuthorizationContext';
 
@@ -18,6 +19,10 @@ const NotFound = () => {
                                 Feane
                             </span>
                         </Link>
+
+                        <Helmet>
+                            <title>404</title>
+                        </Helmet>
 
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class=""> </span>

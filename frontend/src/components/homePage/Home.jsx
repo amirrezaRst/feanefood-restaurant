@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from "react-helmet";
 
 import HomeHeader from './HomeHeader';
 import HomeOffer from './HomeOffer';
@@ -7,6 +8,7 @@ import HomeAbout from './HomeAbout';
 import HomeContact from './HomeContact';
 import UserContext from '../../services/UserContext';
 import FoodContext from '../../services/FoodContext';
+
 
 const Home = () => {
 
@@ -25,6 +27,10 @@ const Home = () => {
         <UserContext.Provider value={{ userFullName: userFullName, setUserFullName: setUserFullName, userEmail: userEmail, setUserEmail: setUserEmail, userPassword: userPassword, setUserPassword: setUserPassword }}>
 
             <FoodContext.Provider value={{ allFood: allFood, setAllFood: setAllFood, totalPrice: totalPrice, setTotalPrice: setTotalPrice }}>
+
+                <Helmet>
+                    <title>Feane - Home</title>
+                </Helmet>
 
                 <HomeHeader />
                 <HomeOffer />

@@ -4,6 +4,7 @@ import { NavLink, Link, useNavigate } from 'react-router-dom';
 import axios from "axios"
 import { toast } from 'react-toastify';
 import Swal from "sweetalert2";
+import {Helmet} from "react-helmet";
 
 import AuthorizationContext from '../../services/AuthorizationContext';
 
@@ -104,6 +105,11 @@ const Profile = () => {
 
             <header class="header_section" style={{ background: "#14181b" }}>
                 <div class="container">
+
+                    <Helmet>
+                        <title>Feane - Profile</title>
+                    </Helmet>
+
                     <nav class="navbar navbar-expand-lg custom_nav-container ">
                         <Link to="/" class="navbar-brand">
                             <span>

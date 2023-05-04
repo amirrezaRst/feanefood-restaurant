@@ -4,6 +4,7 @@ import axios from "axios"
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { toast } from "react-toastify";
 import Swal from 'sweetalert2';
+import { Helmet } from "react-helmet";
 
 import AuthorizationContext from '../../services/AuthorizationContext';
 import SingleFoodPageComment from './SignleFoodPageComment';
@@ -241,6 +242,10 @@ const SingleFoodPage = () => {
                 </div>
             </header>
 
+
+            <Helmet>
+                <title>Feane - Order Food</title>
+            </Helmet>
 
             <main className="container h-100" style={{ margin: "10vh auto" }}>
                 <div className="row">

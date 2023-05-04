@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react';
 import { NavLink, Link, useNavigate } from 'react-router-dom';
+import {Helmet} from "react-helmet";
 
 import SingleBuyCart from './SingleBuyCart';
 
@@ -75,6 +76,11 @@ const Cart = () => {
 
             <header class="header_section" style={{ background: "#14181b" }}>
                 <div class="container">
+
+                    <Helmet>
+                        <title>Feane - Cart</title>
+                    </Helmet>
+
                     <nav class="navbar navbar-expand-lg custom_nav-container ">
                         <Link to="/" class="navbar-brand">
                             <span>

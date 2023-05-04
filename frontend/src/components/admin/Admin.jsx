@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 import axios from "axios";
 import { toast } from 'react-toastify';
+import {Helmet} from "react-helmet";
 
 import AdminContext from "../../services/AdminContext";
 import AdminLayout from '../layouts/AdminLayout';
@@ -198,6 +199,10 @@ const Admin = () => {
                 <div class="main-panel">
                     {/* <button className='btn btn-ls btn-primary' onClick={result}>Result</button> */}
                     <div class="content-wrapper">
+
+                        <Helmet>
+                            <title>Admin Dashboard</title>
+                        </Helmet>
 
                         <div style={{ cursor: "pointer" }}>
                             <h6 className='text-danger mb-4' data-toggle="modal" data-target="#exampleModal2">Change Password <i className="fa fa-key"></i></h6>
